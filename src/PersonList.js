@@ -2,9 +2,7 @@ import React from 'react'
 
 const PersonList = () => {
   return (
-    <div>
-      
-    </div>
+    <ul></ul>
   )
 }
 
