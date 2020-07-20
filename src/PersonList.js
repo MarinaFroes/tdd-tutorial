@@ -1,9 +1,5 @@
 import React from 'react'
 
-const PersonList = () => {
-  return (
-    <ul></ul>
-  )
-}
+const PersonList = (props) => <ul>{props.people && props.people.length === 1 ? <li></li> : undefined}</ul>;
 
 export default PersonList
