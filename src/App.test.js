@@ -5,15 +5,14 @@ import { shallow } from 'enzyme'
 
 // describe = test suite
 describe('App', () => {
-  // it = test
-  it('renders without crashing', () => {
-    // appWrapper gets the App component (creates an instance of it) so we can inspect it
-    // shallow - only renders the component, not its entire child tree
-    const appWrapper = shallow(<App />);
-  });
+  let appWrapper;
 
+  // Adding a beforeAll to get the shallow App component (without its children) follows the DRY principle because I don't need to do it again inside every test
+  beforeAll(() => {
+    appWrapper = shallow(<App />);
+  })
+  // it = test
   it('renders a person list', () => {
-    const appWrapper = shallow(<App />);
     // .find() from Jest let us pass a component that we want to find in the current component and assign it to an array
     const personList = appWrapper.find(PersonList);
     // expect() will check if the array personList has the length of 1 - I should have only one component called PersonList 
@@ -21,18 +20,17 @@ describe('App', () => {
   });
 
   it('has state', () => {
-    const appWrapper = shallow(<App />);
     // .state() gets the state of the component (which should be a class component)
     const appState = appWrapper.state();
 
-    // Check if the App state is not null - first case scenario
+    // Checks if the App state is not null - first case scenario
     expect(appState).not.toBeNull();
   });
 
-  it('', () => {
-    const appWrapper = shallow(<App />);
+  it('has a people property on state', () => {
     const appState = appWrapper.state();
 
+    // Checks if the property called people is defined inside the App state
     expect(appState.people).toBeDefined();
   });
 });
