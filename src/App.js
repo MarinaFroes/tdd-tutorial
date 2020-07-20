@@ -9,9 +9,9 @@ class App extends Component {
 
   render() {
     return (
-    <div className="App">
-        <PersonList people={this.state.people}/>
-    </div>
+      <div className="App">
+        <PersonList people={this.state.people} />
+      </div>
   )};
 }
 
