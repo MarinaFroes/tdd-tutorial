@@ -19,4 +19,12 @@ describe('App', () => {
     // expect() will check if the array personList has the length of 1 - I should have only one component called PersonList 
     expect(personList).toHaveLength(1);
   });
+
+  it('has state', () => {
+    const appWrapper = shallow(<App />);
+    const appState = appWrapper.state();
+
+    // Check if the App state is not null - first case scenario
+    expect(appState).not.toBeNull();
+  })
 });
