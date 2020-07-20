@@ -22,9 +22,17 @@ describe('App', () => {
 
   it('has state', () => {
     const appWrapper = shallow(<App />);
+    // .state() gets the state of the component (which should be a class component)
     const appState = appWrapper.state();
 
     // Check if the App state is not null - first case scenario
     expect(appState).not.toBeNull();
-  })
+  });
+
+  it('', () => {
+    const appWrapper = shallow(<App />);
+    const appState = appWrapper.state();
+
+    expect(appState.people).toBeDefined();
+  });
 });
