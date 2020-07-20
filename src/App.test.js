@@ -33,4 +33,11 @@ describe('App', () => {
     // Checks if the property called people is defined inside the App state
     expect(appState.people).toBeDefined();
   });
+
+  it('passes people property of state to PersonList as prop', () => {
+    const personList = appWrapper.find(PersonList);
+
+    // Checks if the PersonList component has a prop called people and if it equals to the people property inside the appWrapper component state
+    expect(personList.props().people).toEqual(appWrapper.state().people);
+  });
 });
