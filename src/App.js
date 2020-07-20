@@ -3,7 +3,9 @@ import './App.css'
 import PersonList from './PersonList'
 
 class App extends Component {
-  state = {};
+  state = {
+    people: []
+  };
 
   render() {
     return (
