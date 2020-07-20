@@ -49,6 +49,5 @@ describe('PersonList', () => {
 
     expect(personListWrapper.find('li').text()).toContain(people[0].firstName);
     expect(personListWrapper.find('li').text()).toContain(people[0].lastName);
-
   });
 })
