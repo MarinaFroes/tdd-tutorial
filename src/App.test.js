@@ -12,9 +12,11 @@ describe('App', () => {
     const appWrapper = shallow(<App />);
   });
 
-  // .find() from Jest let us pass a component that we want to find in the current component
-  it('', () => {
+  it('renders a person list', () => {
     const appWrapper = shallow(<App />);
-    appWrapper.find(PersonList);
+    // .find() from Jest let us pass a component that we want to find in the current component and assign it to an array
+    const personList = appWrapper.find(PersonList);
+    // expect() will check if the array personList has the length of 1 - I should have only one component called PersonList 
+    expect(personList).toHaveLength(1);
   });
 });
