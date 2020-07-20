@@ -4,7 +4,7 @@ import PersonList from './PersonList'
 
 class App extends Component {
   state = {
-    people: []
+    people: [{ firstName: "Jane", lastName: "Curtin" }]
   };
 
   render() {
