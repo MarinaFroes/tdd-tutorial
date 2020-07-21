@@ -8,7 +8,10 @@ class AddUserForm extends Component {
 
   render() {
     return (
-      <div></div>
+      <form>
+        <input type="text" value={this.state.firstName} id="first-name" />
+        <input type="text" value={this.state.lastName} id="last-name" />
+      </form>
     )
   }
 }
