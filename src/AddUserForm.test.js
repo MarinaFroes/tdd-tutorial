@@ -12,4 +12,8 @@ describe('AddUserForm', () => {
   it('renders one form element', () => {
     expect(addUserFormWrapper.find('form')).toHaveLength(1);
   });
+
+  it('renders two input fields', () => {
+    expect(addUserFormWrapper.find('input')).toHaveLength(2);
+  });
 });
