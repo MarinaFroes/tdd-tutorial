@@ -13,8 +13,10 @@ describe('AddUserForm', () => {
     expect(addUserFormWrapper.find('form')).toHaveLength(1);
   });
 
-  test('renders two input fields', () => {
-    expect(addUserFormWrapper.find('input')).toHaveLength(2);
+  test('renders two input fields with type text', () => {
+    expect(addUserFormWrapper.find('input').filterWhere((item) => {
+      return item.prop('type') === 'text';
+    })).toHaveLength(2);
   });
 
   test('renders two labels', () => {
