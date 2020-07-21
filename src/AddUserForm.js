@@ -5,11 +5,13 @@ class AddUserForm extends Component {
     firstName: "",
     lastName: ""
   }
-
+  
   render() {
     return (
       <form>
+        <label htmlFor="first-name">First name</label>
         <input type="text" value={this.state.firstName} id="first-name" />
+        <label htmlFor="last-name">Last name</label>
         <input type="text" value={this.state.lastName} id="last-name" />
       </form>
     )
