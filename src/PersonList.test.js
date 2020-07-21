@@ -4,14 +4,14 @@ import { shallow } from 'enzyme'
 
 describe('PersonList', () => {
 
-  it('renders a ul element', () => {
+  test('renders a ul element', () => {
     const personListWrapper = shallow(<PersonList />);
     const peopleListUl = personListWrapper.find('ul');
 
     expect(peopleListUl).toHaveLength(1);
   });
 
-  it('renders no li elements when no people exist', () => {
+  test('renders no li elements when no people exist', () => {
     const people = [];
     const personListWrapper = shallow(<PersonList people={people}/>);
     const peopleListItems = personListWrapper.find('li');
@@ -19,7 +19,7 @@ describe('PersonList', () => {
     expect(peopleListItems).toHaveLength(0);
   });
 
-  it('renders one li element when one person exists', () => {
+  test('renders one li element when one person exists', () => {
     const people = [{
       firstName: "Alan",
       lastName: "Turing"
@@ -30,7 +30,7 @@ describe('PersonList', () => {
     expect(peopleListItems).toHaveLength(1);
   });
 
-  it('renders one li element for each person that exists', () => {
+  test('renders one li element for each person that exists', () => {
     const people = [
       { firstName: "Jane", lastName: "Curtin" },
       { firstName: "Chevy", lastName: "Chase" }
@@ -41,7 +41,7 @@ describe('PersonList', () => {
     expect(peopleListItems).toHaveLength(2);
   });
 
-  it('renders the first and last name of a person', () => {
+  test('renders the first and last name of a person', () => {
     const people = [
       { firstName: "Jane", lastName: "Curtin" }
     ];
