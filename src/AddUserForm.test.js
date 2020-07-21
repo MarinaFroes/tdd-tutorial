@@ -9,15 +9,19 @@ describe('AddUserForm', () => {
     addUserFormWrapper = shallow(<AddUserForm />);
   });
 
-  it('renders one form element', () => {
+  test('renders one form element', () => {
     expect(addUserFormWrapper.find('form')).toHaveLength(1);
   });
 
-  it('renders two input fields', () => {
+  test('renders two input fields', () => {
     expect(addUserFormWrapper.find('input')).toHaveLength(2);
   });
 
-  it('renders two labels', () => {
+  test('renders two labels', () => {
     expect(addUserFormWrapper.find('label')).toHaveLength(2);
+  });
+
+  test('renders a submit button', () => {
+    expect(addUserFormWrapper.find('button')).toHaveLength(1);
   });
 });
