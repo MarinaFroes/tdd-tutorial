@@ -13,6 +13,7 @@ class AddUserForm extends Component {
         <input type="text" value={this.state.firstName} id="first-name" />
         <label htmlFor="last-name">Last name</label>
         <input type="text" value={this.state.lastName} id="last-name" />
+        <button>Submit</button>
       </form>
     )
   }
