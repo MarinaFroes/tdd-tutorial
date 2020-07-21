@@ -1,6 +1,7 @@
 import React from 'react'
 import App from './App'
 import PersonList from './PersonList'
+import AddUserForm from './AddUserForm'
 import { shallow } from 'enzyme'
 
 // describe = test suite
@@ -40,4 +41,10 @@ describe('App', () => {
     // Checks if the PersonList component has a prop called people and if it equals to the people property inside the appWrapper component state
     expect(personList.props().people).toEqual(appWrapper.state().people);
   });
+
+  it('renders an add user form', () => {
+    const addUserForm = appWrapper.find(AddUserForm);
+    expect(addUserForm).toHaveLength(1);
+  });
+
 });
