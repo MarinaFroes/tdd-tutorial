@@ -6,10 +6,10 @@ class AddUserForm extends Component {
     return (
       <form>
         <label>
-          <input type="text" />
+          <input type="text" id="first-name"/>
         </label>
         <label>
-          <input type="text" />
+          <input type="text" id="last-name"/>
         </label>
         <button></button>
       </form>
