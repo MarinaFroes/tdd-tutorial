@@ -19,6 +19,14 @@ describe('AddUserForm', () => {
     })).toHaveLength(2);
   });
 
+  test('renders an input with id of first-name', () => {
+    expect(addUserFormWrapper.find('input#first-name')).toHaveLength(1);
+  });
+
+  test('renders an input with id of last-name', () => {
+    expect(addUserFormWrapper.find('input#last-name')).toHaveLength(1);
+  });
+
   test('renders two labels', () => {
     expect(addUserFormWrapper.find('label')).toHaveLength(2);
   });
