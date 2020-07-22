@@ -5,7 +5,7 @@ class AddUserForm extends Component {
   render() {
     return (
       <form>
-        <label>
+        <label>First name
           <input type="text" id="first-name"/>
         </label>
         <label>
