@@ -8,7 +8,7 @@ class AddUserForm extends Component {
         <label>First name
           <input type="text" id="first-name"/>
         </label>
-        <label>
+        <label>Last name
           <input type="text" id="last-name"/>
         </label>
         <button></button>
