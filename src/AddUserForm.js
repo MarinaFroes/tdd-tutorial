@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TextInput from './TextInput'
+import SubmitButton from './SubmitButton'
 
 class AddUserForm extends Component {
 
@@ -7,7 +8,8 @@ class AddUserForm extends Component {
     return (
       <form>
         <TextInput name="first-name" label="First Name" type="text"/>
-        <TextInput name="last-name" label="Last Name" type="text"/>
+        <TextInput name="last-name" label="Last Name" type="text" />
+        <SubmitButton />
       </form>
     )
   }
