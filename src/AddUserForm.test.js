@@ -31,6 +31,12 @@ describe('AddUserForm', () => {
     expect(addUserFormWrapper.find('label')).toHaveLength(2);
   });
 
+  test('renders a label with the text First Name', () => {
+    expect(addUserFormWrapper.find('label').filterWhere((item) => {
+      return item.text() === 'First name';
+    })).toHaveLength(1);
+  });
+
   test('renders a submit button', () => {
     expect(addUserFormWrapper.find('button')).toHaveLength(1);
   });
