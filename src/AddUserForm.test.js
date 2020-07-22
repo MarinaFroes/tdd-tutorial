@@ -43,6 +43,18 @@ describe('AddUserForm', () => {
     })).toHaveLength(1);
   });
 
+  test('renders a label with htmlFor property of first-name', () => {
+    expect(addUserFormWrapper.find('label').filterWhere((item) => {
+      return item.prop('htmlFor') === 'first-name';
+    })).toHaveLength(1);
+  });
+
+  test('renders a label with htmlFor property of last-name', () => {
+    expect(addUserFormWrapper.find('label').filterWhere((item) => {
+      return item.prop('htmlFor') === 'last-name';
+    })).toHaveLength(1);
+  });
+
   test('renders a submit button', () => {
     expect(addUserFormWrapper.find('button')).toHaveLength(1);
   });
