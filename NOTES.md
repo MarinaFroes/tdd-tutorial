@@ -1,5 +1,5 @@
 <p align="center"><img src="./src/img/mylogo.svg" alt="logo" title="logo" width="80"></p>
-<h1 align="center">React + Jest + Enzyme TDD Tutorial</h1>
+<h1 align="center">My Notes on this Tutorial</h1>
 
 This app was created by following the [TDD Live Coding - Test Driven Development Tutorial with React, Jest, and Enzyme](https://www.youtube.com/watch?v=tX-gu6FWcsE) by Steve Bishop. My goal is to learn TDD in React.
 You can check how to install and run it and the references and resources for the tutorial on the [README](./README.md) file. Here I will share some notes about the tutorial and my conclusions.
