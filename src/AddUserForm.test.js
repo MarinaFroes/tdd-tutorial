@@ -2,6 +2,7 @@ import React from 'react'
 import AddUserForm from './AddUserForm'
 import TextInput from './TextInput'
 import { shallow } from 'enzyme'
+import SubmitButton from './SubmitButton'
 
 describe('AddUserForm', () => {
   let addUserFormWrapper;
@@ -16,5 +17,9 @@ describe('AddUserForm', () => {
 
   test('renders two TextInput', () => {
     expect(addUserFormWrapper.find(TextInput)).toHaveLength(2);
+  });
+
+  test('renders one SubmitButton', () => {
+    expect(addUserFormWrapper.find(SubmitButton)).toHaveLength(1);
   });
 });
