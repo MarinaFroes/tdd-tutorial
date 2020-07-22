@@ -57,6 +57,7 @@ Bishop concludes the video with his answer to this question (which we already kn
 He says we should consider 2 things:
   - Do we want our applications to work? - Yes
   - What is the best way to ensure our system is working? Manual testing or automated testing? - Automated testing, of course.
+
 So the only question that remains is: when do we write our test? Before or after the implementation?
 Clearly, his answer is before, so we have a more complete suite of tests. In fact, if we strictly follow the TDD laws, we won't have a single line of code that wasn't tested before we even wrote it.
 He also adds that when our application is already implemented, we already know it's working, so there's no point in testing every single line of code and we get lazy and don't create a complete test suite because of that.
