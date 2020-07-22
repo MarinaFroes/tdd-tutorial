@@ -5,10 +5,10 @@ class AddUserForm extends Component {
   render() {
     return (
       <form>
-        <label>First name
+        <label htmlFor="first-name">First name
           <input type="text" id="first-name"/>
         </label>
-        <label>Last name
+        <label htmlFor="last-name">Last name
           <input type="text" id="last-name"/>
         </label>
         <button></button>
