@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="./src/img/mylogo.svg" alt="logo" title="logo" width="80"></p>
+<h1 align="center">React + Jest + Enzyme TDD Tutorial</h1>
 
-## Available Scripts
+This app was created by following the [TDD Live Coding - Test Driven Development Tutorial with React, Jest, and Enzyme](https://www.youtube.com/watch?v=tX-gu6FWcsE) by Steve Bishop. My goal is to learn TDD in React.
+You can check my notes about this tutorial on the [NOTES](./NOTES.md) file.
 
-In the project directory, you can run:
+## Overview
 
-### `yarn start`
+- This livestream consists of a 2-hour long video available on the [Programming Made EZ](https://www.youtube.com/watch?v=tX-gu6FWcsE).
+- The main goal was to create a list of people and being able to edit it, but the tutorial ends before that. So I'll add a functionality to add more people to the list and being able to delete the existing ones. Maybe, I'll also add an API to understand how to test asynchronous operations.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Jest
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Jest is a JavaScript testing solution
+- It doesn't need previous configuration on most JavaScript projects
 
-### `yarn test`
+### Enzyme
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Enzyme is a special library for wrapping react components 
+- It can be replaced by [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) (my next learning goal), which is the default testing library in react apps bootstraped with create-react-app 
 
-### `yarn build`
+## How to install and run it
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Download the files, cd into root directory and run:
+```bash
+# Install dependencies
+$ npm install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Run the app
+$ npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Run the tests
+$ npm test
+```  
 
-### `yarn eject`
+## References and Resources
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [TDD Live Coding - Test Driven Development Tutorial with React, Jest, and Enzyme](https://www.youtube.com/watch?v=tX-gu6FWcsE) by Steve Bishop
+- [Jest](https://jestjs.io)
+- [Enzyme](https://airbnb.io/enzyme)
