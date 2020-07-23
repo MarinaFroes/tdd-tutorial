@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
+import AddUserFormContext from './AddUserFormContext'
 
-const SubmitButton = ({ text }) => {
-  return (
-    <button type='submit'>{ text }</button>
-  )
+class SubmitButton extends Component {
+  static contextType = AddUserFormContext;
+
+  render() {
+    const { text } = this.props;
+    
+    return <button type='submit'>{ text }</button>
+  }
 }
 
 export default SubmitButton

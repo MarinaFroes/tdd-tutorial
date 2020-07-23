@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
-import TextInput from './TextInput'
-import SubmitButton from './SubmitButton'
+import AddUserFormContext from './AddUserFormContext'
 
 class AddUserForm extends Component {
+  state = {
+    name: ""
+  }
+
+  onSubmit = e => {
+    e.preventDefault();
+    this.props.onSubmit();
+  }
 
   render() {
     return (
-      <form>
-        <TextInput name="first-name" label="First Name" type="text"/>
-        <TextInput name="last-name" label="Last Name" type="text" />
-        <SubmitButton />
-      </form>
+      <AddUserFormContext.Provider value={null}>
+        <form onSubmit={this.onSubmit}>
+          {this.props.children}
+        </form>
+      </AddUserFormContext.Provider>
     )
   }
 }
