@@ -1,8 +1,9 @@
 <p align="center"><img src="./src/img/mylogo.svg" alt="logo" title="logo" width="80"></p>
 <h1 align="center">React + Jest + Enzyme TDD Tutorial</h1>
 
-This app was created by following the [TDD Live Coding - Test Driven Development Tutorial with React, Jest, and Enzyme](https://www.youtube.com/watch?v=tX-gu6FWcsE) by Steve Bishop. My goal is to learn TDD in React.
-You can check my notes about this tutorial on the [NOTES](./NOTES.md) file.
+This app was created originally by following the [TDD Live Coding - Test Driven Development Tutorial with React, Jest, and Enzyme](https://www.youtube.com/watch?v=tX-gu6FWcsE) by Steve Bishop. But I also added some of the material of [this post from Gasim Gasimzada](https://medium.com/front-end-weekly/tested-react-build-and-test-a-form-using-react-context-81870af6a9ac) about testing a form using react context. 
+
+My goal was to learn TDD in React and you can check my notes about these tutorials on the [NOTES](./NOTES.md) file.
 
 ## Overview
 
@@ -38,3 +39,4 @@ $ npm test
 - [TDD Live Coding - Test Driven Development Tutorial with React, Jest, and Enzyme](https://www.youtube.com/watch?v=tX-gu6FWcsE) by Steve Bishop
 - [Jest](https://jestjs.io)
 - [Enzyme](https://airbnb.io/enzyme)
+- [Build and test a form using react context](https://medium.com/front-end-weekly/tested-react-build-and-test-a-form-using-react-context-81870af6a9ac) by Gasim Gasimzada
