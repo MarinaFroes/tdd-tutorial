@@ -1,6 +1,10 @@
 import React from 'react'
-import TextInput from './TextInput'
+import ReactDOM from 'react-dom';
+import TestUtils from 'react-dom/test-utils';
 import { mount } from 'enzyme'
+
+import TextInput from './TextInput'
+import AddUserForm from './AddUserForm'
 
 describe('TextInput', () => {
   let textInputWrapper;
@@ -36,5 +40,22 @@ describe('TextInput', () => {
 
   test('renders a label with htmlFor equal to first-name', () => {
     expect(label.prop('htmlFor')).toEqual('first-name');
+  });
+
+  test('reads and sets input value when using context to store the data', () => {
+    const wrapper = document.createElement('div');
+
+    ReactDOM.render(
+      <AddUserForm>
+        <TextInput name="first-name" label="First Name" />
+      </AddUserForm>,
+      wrapper
+    )
+
+    const inputElement = wrapper.querySelector('input');
+
+    TestUtils.Simulate.change(inputElement, { target: { value: 'Peter Parker' } });
+
+    expect(input.value).toEqual('Peter Parker');
   });
 })
