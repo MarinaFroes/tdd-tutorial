@@ -7,7 +7,7 @@ class SubmitButton extends Component {
   render() {
     const { text } = this.props;
     
-    return <button type='submit'>{ text }</button>
+    return <button type='submit' disabled={this.context.isSubmitting}>{ text }</button>
   }
 }
 

@@ -10,7 +10,13 @@ class TextInput extends Component {
     return (
       <label htmlFor={name}>
         {label}
-        <input type={type} name={name} id={name} />
+        <input
+          type={type}
+          name={name}
+          id={name}
+          onChange={this.context.inputChange(name)}
+          value={this.context.getInputValue(name)}
+        />
       </label>
     )
   }
